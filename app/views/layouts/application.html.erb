@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GemRailsApp</title>
+    <title>konatsu</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+    <%= csp_meta_tag %> 
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
   </head>
 
   <body>
+    <header>
+      <div class="header-logo">
+        <a href="/"><img src="/app-logo.png"></a>
+      </div>
+    </header>
     <%= yield %>
   </body>
 </html>
