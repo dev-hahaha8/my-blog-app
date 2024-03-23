@@ -4,4 +4,7 @@ class BlogController < ApplicationController
 
   def github
   end
+
+  def css
+  end
 end

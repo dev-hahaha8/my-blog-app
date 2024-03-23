@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   get "/blog/gem" => "blog#gem"
   get "/blog/github" => "blog#github"
+  get "/blog/css" => "blog#css"
 
   get "/terms" => "service#terms"
   get "/privacy" => "service#privacy"
