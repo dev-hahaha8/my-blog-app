@@ -159,6 +159,20 @@ code {
      margin: 0;
 }
 
+.service-main {
+     max-width: 750px;
+     margin: 30px auto;
+}
+.service-main h1 {
+     font-size: 20px;
+     color: #111;
+}
+.service-main p {
+     color: rgba(0, 0, 0, .7);
+     font-size: 15px;
+     line-height: 1.7;
+}
+
 footer {
      text-align: center;
      font-weight: bold;
