@@ -1,0 +1,42 @@
+<section id="main">
+     <div class="main-top">
+          <img src="/kao_star.png">
+          <h1>GitHubリポジトリの基本的なコマンド</h1>
+          <p>最近やっとわかってきたGitHubリポジトリの使い方と基本的なコマンドをまとめました！</p>
+     </div>
+
+     <div id="main-article">
+          <h1>GitHubリポジトリとは</h1>
+          <p>リポジトリは、GitHubの<span class="bold">最も基本的な要素</span>です。 これは、コード、ファイル、各ファイルの変更履歴を格納できる場所です。</p>
+          <p>リポジトリは、複数のクリエイターが参加することができ、公開用、内部、またはプライベートのいずれかにできます。</p>
+
+          <h1>基本的な使い方</h1>
+          <h2>新しいリポジトリを作成する</h2>
+          <ul>
+               <li>GitHubにログインします。</li>
+               <li>ページ右上の＋アイコンをクリックし、ドロップダウンメニューから"New repository"を選択します。</li>
+               <li>新しいリポジトリを作成するページが表示されます。ここで以下の情報を入力します。</li>
+                    <ul>
+                         <li>Repository name: リポジトリの名前を入力します。</li>
+                         <li>Description (optional): リポジトリの説明を入力します。省略可能です。</li>
+                         <li>Visibility: リポジトリを公開するか、限定公開にするか、プライベートにするかを選択します。</li>
+                         <li>Initialize this repository with: リポジトリを初期化する方法を選択します。例えば、READMEファイルや.gitignoreファイルを追加することができます。</li>
+                    </ul>
+               <li>入力が完了したら、"Create repository"ボタンをクリックします。</li>
+          </ul>
+
+          <h2>リポジトリに作品を保存する</h2>
+          <p>リポジトリを作成したらなんでもいいのでアプリ（Next.jsやRailsなど）を作成します。事前に作成していたものでも大丈夫です。</p>
+          <p>そのアプリのルートディレクトリに移動して、以下のコマンドを実行します。</p>
+          <p>これによりリモートリポジトリが設定できます</p>
+          <pre>
+               <code>git remote add origin リポジトリのURL</code>
+          </pre>
+          <p>コマンドを実行できたら、以下のコマンドを実行します。新しいアプリを作った時や変更を加えた時にリポジトリに保存できます。</p>
+          <pre>
+               <code>git add .</code>
+               <code>git commit -m "メッセージ"</code>
+               <code>git push origin master</code>
+          </pre>
+     </div>
+</section>     
