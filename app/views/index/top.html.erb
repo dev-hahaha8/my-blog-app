@@ -1,27 +1,17 @@
-<section id="newest">
-     <h1>最新記事</h1>
-     <div id="newest-articles">
-          <a href="/blog/css"><div class="article">
-               <img src="/see.png">
-               <div>
-                    <h1 style="font-size: 20px;">CSSの疑似要素</h1>
-                    <p style="font-size: 17.5px;">2024/03/23</p>
-               </div>
-          </div></a>
-          <a href="/blog/github"><div class="article">
-               <img src="/kao_star.png">
-               <div>
-                    <h1 style="font-size: 20px;">GitHubリポジトリの基本的なコマンド</h1>
-                    <p style="font-size: 17.5px;">2024/03/23</p>
-               </div>
-          </div></a>
-          <a href="/blog/gem"><div class="article">
-               <img src="/odango.png">
-               <div>
-                    <h1 style="font-size: 20px;">RailsでGemを活用した開発をしたい</h1>
-                    <p style="font-size: 17.5px;">2024/03/22</p>
-               </div>
-          </div></a>
+<section id="main-sec">
+     <h1 id="main-sec-logo">最新記事</h1>
+     
+     <div id="articles">
+     <% @articles.each do |article| %>
+     <div class="articles-format">
+          <a href="<%= article[:href] %>">
+          <div class="article">
+               <div class="article-img"><img src="<%= article[:img_src] %>"></div>
+               <h1 style="font-size: 16.5px;"><%= article[:title] %></h1>
+          </div>
+          </a>
+     </div>
+     <% end %>
      </div>
 
      <a href="/blog" id="blog"><button>記事一覧を見る</button></a>
