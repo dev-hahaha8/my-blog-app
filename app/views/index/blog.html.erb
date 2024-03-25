@@ -1,5 +1,5 @@
 <section id="main-sec">
-     <h1 id="main-sec-logo">最新記事</h1>
+     <h1 id="main-sec-logo">記事一覧</h1>
 
      <div id="articles">
      <% @articles.each do |article| %>
@@ -7,7 +7,7 @@
           <a href="<%= article[:href] %>">
           <div class="article">
                <div class="article-img"><img src="<%= article[:img_src] %>"></div>
-               <h1 style="font-size: 16.5px;"><%= article[:title] %></h1>
+               <h1 style="font-size: 15.5px;"><%= article[:title] %></h1>
           </div>
           </a>
      </div>
