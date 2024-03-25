@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'service/privacy'
   get "/" => "index#top"
+  get "/blog" => "index#blog"
 
   get "/blog/gem" => "blog#gem"
   get "/blog/github" => "blog#github"

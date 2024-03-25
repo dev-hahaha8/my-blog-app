@@ -37,12 +37,35 @@ header {
      font-size: 25px;
 }
 
+#blog {   
+     max-width: 150px;
+     margin: 0 auto;
+}
+a#blog {
+     text-decoration: none;
+}
+#blog button {
+     cursor: pointer;
+     background-color: #fff;
+     color: #333;
+     border: 1.5px solid rgba(0, 0, 0, .1);
+     border-radius: 5px;
+     padding: 10px 15px;
+     font-weight: bold;
+     font-size: 15px;
+     width: 150px;
+     margin: 0 auto;
+}
+#blog button:hover {
+     background-color: #f9f9f9;
+}
+
 .article {
      border: 1.5px solid rgba(0, 0, 0, .1);
      display: flex;
      height: 100px;
      width: 100%;
-     border-radius: 15px;
+     border-radius: 10px;
      box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, .025);
      background-color: #fff;
      margin-bottom: 25px;
@@ -55,7 +78,7 @@ header {
      height: 100px;
      border-right: 1.5px solid rgba(0, 0, 0, .1);
      background-color: #fff;
-     border-radius: 15px 0px 0px 15px;
+     border-radius: 10px 0px 0px 10px;
 }
 .article div {
      padding: 15px;
