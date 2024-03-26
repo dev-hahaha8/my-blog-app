@@ -102,6 +102,24 @@ a#blog {
      padding: 5px;
 }
 
+.ranking {
+     list-style: none;
+     padding: 0;
+}
+.ranking li {
+     border-bottom: 1px solid #ccc;
+     padding: 10px 0;
+}
+.ranking a {
+     color: #333;
+}
+.ranking li:last-child {
+     border-bottom: none;
+}
+.ranking li span {
+     color: #999;
+}
+
 .main-top {
      text-align: center;
      margin-top: 15px;
