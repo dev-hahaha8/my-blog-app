@@ -80,7 +80,7 @@ a#blog {
      transition: all .3s;
 }
 .article:hover {
-     transform: translateY(-2.5px);
+     transform: scale(97.5%);
 }
 .article-img {
      width: 100%;
